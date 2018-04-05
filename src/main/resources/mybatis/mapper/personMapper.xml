@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC  "-//mybatis.org//DTD mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="mybatis.mapper.PersonMapper">
+
+    <resultMap id="personMap" type="mybatis.model.Person" >
+        <id column="id" property="id"/>
+        <result column="create_at"  property="create_at"/>
+        <result column="update_at"  property="update_at"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="sex"  property="sex"/>
+        <result column="pro" property="pro"/>
+        <result column="tell"  property="tell"/>
+        <result column="qq"  property="qq"/>
+        <result column="email"  property="email"/>
+        <result column="waikey"  property="waikey"/>
+    </resultMap>
+
+    <!--命名sql语句 可以在下面调用,在这标注可以有这种引用方式-->
+    <!--<sql id="person_column">-->
+        <!--id,create_at,update_at,name,age,sex,tell,qq,email,pro,waikey-->
+    <!--</sql>-->
+    <!-- 要么是resultMap="userMap"   要么是resultTpye="int" -->
+    <select id="selectById" parameterType="int" resultMap="personMap" >
+        SELECT * FROM person WHERE id = #{id}
+    </select>
+
+    <select id="findAll" parameterType="mybatis.model.Person" resultMap="personMap">
+        SELECT * FROM person
+    </select>
+
+
+    <insert id="insertPerson" parameterType="mybatis.model.Person"  useGeneratedKeys="true"  >
+        INSERT INTO person
+        (id,create_at,update_at,name,age,sex,pro,tell,qq,email,waikey)
+        values
+        (#{id},#{create_at},#{update_at},#{name},#{age},#{sex},#{pro},#{tell},#{qq},#{email},#{waikey})
+    </insert>
+
+    <insert id="createPerson" parameterType="mybatis.model.Person"  useGeneratedKeys="true"  >
+        INSERT INTO person
+        (id,create_at,update_at,name,age,sex,pro,tell,qq,email,waikey)
+        values
+        (#{id},#{create_at},#{update_at},#{name},#{age},#{sex},#{pro},#{tell},#{qq},#{email},#{waikey})
+    </insert>
+
+
+
+    <insert id="insertPersonList" parameterType="mybatis.model.Person"  useGeneratedKeys="true">
+        INSERT INTO person(id,create_at,update_at,name,age,sex,pro,tell,qq,email,waikey)
+        values
+        <foreach  item="item" collection="list" separator="," index = "index">
+            (#{item.id},#{item.create_at},#{item.update_at},#{item.name},#{item.age},#{item.sex},#{item.tell},#{item.qq},#{item.email},#{item.pro},#{item.waikey})
+        </foreach>
+    </insert>
+
+    <update id="updatePerson" parameterType="mybatis.model.Person" >
+        Update person SET name=#{name},age=#{age},sex=#{sex},tell=#{tell},qq=#{qq},email=#{email},pro=#{pro},waikey=#{waikey} WHERE id=#{id}
+    </update>
+
+    <delete id="delectPerson" parameterType="int"  >
+        DELETE FROM person WHERE id = #{id}
+    </delete>
+
+</mapper>
