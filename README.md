@@ -22,11 +22,11 @@
     │  │  │   └─ pojo  
     │  │  │   │     ├─    Person.java  
     │  │  │   │     └─    User.java  
-    │  │  │   │
-    │  │  │   
-├─ controller  
     │  │  │
-├─ mybatis  ————*//SpringMybatis整合类*  
+    │  │  │
+    │  │  │ ├─ controller  
+    │  │  │
+ ├─ mybatis  ————*//SpringMybatis整合类*  
     │  │  │     ├─ mapper  
     │  │  │     │   └─     PersonMapper.java  
     │  │  │     │        
