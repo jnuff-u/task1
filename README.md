@@ -13,7 +13,7 @@
     │  │  │        
     │  │  ├─ com.jdbctemplate   ————*//jdbcTemplate*  
     │  │  │   │
-    │  │  │   ├─ dao  
+    ├─ dao  
     │  │  │   │    └─    UserDao.java   
     │  │  │   │        
     │  │  │   ├─ daoservice  
@@ -24,9 +24,9 @@
     │  │  │   │     └─    User.java  
     │  │  │   
     │  │  │
-    │  │  ├─ controller  
+ ├─ controller  
     │  │  │
-    │  │  ├─ mybatis  ————*//SpringMybatis整合类*  
+ ├─ mybatis  ————*//SpringMybatis整合类*  
     │  │  │     ├─ mapper  
     │  │  │     │   └─     PersonMapper.java  
     │  │  │     │        
