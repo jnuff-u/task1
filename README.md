@@ -1,5 +1,16 @@
 # task1 
-│ 
+│目录：  
+    
+-action和test目录为测试目录    
+    
+-jdbctemplate目录为jdbcTemplate模块    
+    
+-mybatis目录为SpringMybatis模块    
+    
+-resource目录为资源目录    
+    
+![](https://github.com/jnuff-u/task1/blob/task1/task1/mulu.png)  
+
 │    
 └─ src  
     ├─ main  
