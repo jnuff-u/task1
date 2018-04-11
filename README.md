@@ -7,7 +7,7 @@
     │  │  
     │  ├─ java  
     │  │  │
-    │  │  ├─ action  
+├─ action  
     │  │  │   ├─     MybatisAction.java  ———— *//main主入口*   
     │  │  │   └─     MybatisActionB.java    
     │  │  │        
