@@ -1,15 +1,18 @@
 # task1 
-│  pom.xml  
+│ 
 │    
 └─ src  
     ├─ main  
     │  ├─ filters  
+    │  │  
     │  ├─ java  
+    │  │  │
     │  │  ├─ action  
     │  │  │   ├─     MybatisAction.java  ———— *//main主入口*   
     │  │  │   └─     MybatisActionB.java    
     │  │  │        
     │  │  ├─ com.jdbctemplate   ————*//jdbcTemplate*  
+    │  │  │   │
     │  │  │   ├─ dao  
     │  │  │   │    └─    UserDao.java   
     │  │  │   │        
@@ -19,8 +22,10 @@
     │  │  │   └─ pojo  
     │  │  │   │     ├─    Person.java  
     │  │  │   │     └─    User.java  
-    │  │  │            
-    │  │  ├─ controller   
+    │  │  │   
+    │  │  │
+    │  │  ├─ controller  
+    │  │  │
     │  │  ├─ mybatis  ————*//SpringMybatis整合类*  
     │  │  │     ├─ mapper  
     │  │  │     │   └─     PersonMapper.java  
@@ -44,7 +49,8 @@
     │  │   │   │    
     │  │   │   └─ mapper  
     │  │   │   │     └─   personMapper.xml  
-    │  │                
+    │  │      
+    │  │  
     │  └─ webapp  
     │      │  └─ ndex.jsp  
     │      │    
@@ -56,4 +62,5 @@
     │     ├─     TestjdbcTemplate.java  ————*//jdbcTemplate测试类*  
     │     ├─     TestMybatis.java       ————*//简单测试 SpringMybatis，其它测试在java/action目录下*  
     │     └─     TestPractice.java      ————*//其它练习*  
-            
+    │         
+    └─  pom.xml  
