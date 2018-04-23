@@ -1,4 +1,4 @@
-package action;
+﻿package action;
 
 import dao.mapper.StudentMapper;
 import model.Student;
@@ -16,6 +16,13 @@ import service.RandomStudent;
 
 import java.util.List;
 import java.util.Scanner;
+
+/*
+*
+* 本来是测试类，后改为使用MainAction调用
+* 
+*
+**/
 
 @Component
 @RunWith(SpringJUnit4ClassRunner.class)

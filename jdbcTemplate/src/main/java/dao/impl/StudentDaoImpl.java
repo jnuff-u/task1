@@ -1,4 +1,4 @@
-package dao.impl;
+﻿package dao.impl;
 
 import dao.StudentDao;
 import model.Student;
@@ -75,6 +75,7 @@ public class StudentDaoImpl implements StudentDao {
     }
 
 
+//    查询全部
     @Override
     public List<Student> findAll() {
 
@@ -100,6 +101,7 @@ public class StudentDaoImpl implements StudentDao {
         return list;
     }
 
+//    根据条件查询全部
     @Override
     public List<Student> findByStudent(Student student){
 
@@ -160,6 +162,8 @@ public class StudentDaoImpl implements StudentDao {
         return students;
     }
 
+
+//    添加数据
     @Override
     public int insert(final Student student) {
 
@@ -202,6 +206,7 @@ public class StudentDaoImpl implements StudentDao {
     }
 
 
+//    批量添加
     @Override
     public int insertLiset(List<Student> list) {
 
@@ -250,6 +255,8 @@ public class StudentDaoImpl implements StudentDao {
         return con;
     }
 
+
+//    修改数据
     @Override
     public int update(Student student) {
 
@@ -260,6 +267,8 @@ public class StudentDaoImpl implements StudentDao {
 
     }
 
+
+//    批量修改
     @Override
     public int[] updateList(final List<Student> students) {
 
@@ -303,6 +312,7 @@ public class StudentDaoImpl implements StudentDao {
         return updateCount;
     }
 
+//    删除数据
     @Override
     public int delect(int id) {
 
