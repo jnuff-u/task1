@@ -1,4 +1,7 @@
 # task1 
+‘task1’目录是之前整合在一起的 
+JDBC / JdbcTemplate / Mybatis / SpringMybatis 为任务一提交
+
 │目录：  
     
 -action和test目录为测试目录    
